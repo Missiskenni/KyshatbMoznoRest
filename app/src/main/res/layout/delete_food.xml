@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Удаление еды из ресторана"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/newBlack"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выберите еду"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/newBlack"
+            />
+
+        <Spinner
+            android:id="@+id/spinFoodDelete"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Изменение еды в ресторане"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/newBlack"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Выберите еду"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/newBlack"
+                />
+
+            <Spinner
+                android:id="@+id/spinFood"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Название еды"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/newBlack"
+                />
+            <EditText
+                android:id="@+id/nameOfFoodChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Состав еды"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/newBlack"
+                />
+            <EditText
+                android:id="@+id/compOfFoodChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Цена еды"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/newBlack"
+                />
+            <EditText
+                android:id="@+id/priceOfFoodChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Вес еды"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/newBlack"
+                />
+            <EditText
+                android:id="@+id/weightOfFoodChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Категория еды"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/newBlack"
+                />
+            <EditText
+                android:id="@+id/catOfFoodChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Фото еды"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/newBlack"
+                />
+
+            <ImageView
+                android:id="@+id/photoFoodChange"
+                android:layout_marginTop="5dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/food_def"/>
+
+            <Button
+                android:id="@+id/btnPhotoOfFoodChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_sign_in"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Выберите фото"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
